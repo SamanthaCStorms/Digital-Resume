@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samantha Claire Storms — Digital Marketer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1e0f2e;
+    --navy-mid: #2d1a42;
+    --cream: #f7f0f2;
+    --cream-dark: #eddde3;
+    --terra: #c2688f;
+    --terra-light: #d4a0b0;
+    --terra-pale: #f5e4ec;
+    --slate: #6a4f62;
+    --muted: #a48898;
+    --white: #ffffff;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--cream);
+    color: var(--navy);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+    height: 64px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .nav-name {
+    font-family: var(--serif);
+    color: var(--cream);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 12.5px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--terra-light); }
+
+  /* ─── HERO ─── */
+  #home {
+    background: var(--navy);
+    padding: 80px 56px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #home::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 55% 45% at 85% 25%, rgba(194,104,143,0.22) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 50% at 70% 70%, rgba(139,58,98,0.18) 0%, transparent 65%),
+      radial-gradient(ellipse 35% 40% at 95% 60%, rgba(212,160,176,0.14) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 35% at 60% 10%, rgba(139,58,98,0.10) 0%, transparent 65%);
+    filter: blur(32px);
+    pointer-events: none;
+  }
+
+  #home::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 30% 40% at 90% 45%, rgba(194,104,143,0.12) 0%, transparent 65%),
+      radial-gradient(ellipse 45% 30% at 75% 85%, rgba(212,160,176,0.10) 0%, transparent 60%);
+    filter: blur(48px);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--terra);
+    margin-bottom: 22px;
+    font-weight: 400;
+  }
+
+  .hero-name {
+    font-family: var(--serif);
+    font-size: clamp(44px, 6vw, 72px);
+    color: var(--cream);
+    line-height: 1.05;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
+  .hero-name em {
+    font-style: italic;
+    color: var(--terra-light);
+  }
+
+  .hero-tagline {
+    font-family: var(--sans);
+    font-size: clamp(15px, 1.6vw, 18px);
+    color: rgba(247,240,242,0.7);
+    max-width: 580px;
+    margin: 28px 0 44px;
+    line-height: 1.7;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+  }
+
+  .btn-primary {
+    background: var(--terra);
+    color: var(--white);
+    padding: 13px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    transition: background 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover { background: var(--terra-light); }
+
+  .btn-outline {
+    border: 1px solid rgba(245,240,232,0.25);
+    color: var(--cream);
+    padding: 13px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: border-color 0.2s, color 0.2s;
+    display: inline-block;
+  }
+
+  .btn-outline:hover { border-color: var(--terra-light); color: var(--terra-light); }
+
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 40px;
+  }
+
+  .hero-stat-num {
+    font-family: var(--serif);
+    font-size: 32px;
+    color: var(--terra-light);
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .hero-stat-label {
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .hero-photo-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .hero-photo-frame {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(194,104,143,0.35);
+    outline: 1px solid rgba(194,104,143,0.12);
+    outline-offset: 10px;
+    flex-shrink: 0;
+    background: var(--navy-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: rgba(194,104,143,0.5);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-photo-placeholder svg {
+    width: 48px;
+    height: 48px;
+    opacity: 0.5;
+  }
+
+  .hero-photo-placeholder span {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(245,240,232,0.3);
+  }
+
+  /* ─── GENERIC SECTION ─── */
+  section { padding: 88px 56px; position: relative; overflow: hidden; }
+  section:nth-child(even) { background: var(--cream-dark); }
+
+  section:not(#home)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 28% 18% at 88% 18%, rgba(194,104,143,0.055) 0%, transparent 100%),
+      radial-gradient(ellipse 18% 14% at 78% 28%, rgba(212,160,176,0.04) 0%, transparent 100%),
+      radial-gradient(ellipse 22% 12% at 94% 32%, rgba(139,58,98,0.03) 0%, transparent 100%),
+      radial-gradient(ellipse 20% 16% at 8% 72%, rgba(194,104,143,0.04) 0%, transparent 100%),
+      radial-gradient(ellipse 14% 12% at 18% 82%, rgba(212,160,176,0.03) 0%, transparent 100%);
+    filter: blur(22px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  section:not(#home):nth-child(even)::before {
+    background:
+      radial-gradient(ellipse 26% 16% at 12% 22%, rgba(194,104,143,0.05) 0%, transparent 100%),
+      radial-gradient(ellipse 16% 12% at 24% 34%, rgba(212,160,176,0.035) 0%, transparent 100%),
+      radial-gradient(ellipse 20% 14% at 6% 38%, rgba(139,58,98,0.025) 0%, transparent 100%),
+      radial-gradient(ellipse 18% 14% at 85% 78%, rgba(194,104,143,0.04) 0%, transparent 100%),
+      radial-gradient(ellipse 12% 10% at 92% 68%, rgba(212,160,176,0.03) 0%, transparent 100%);
+  }
+
+  section > * { position: relative; z-index: 1; }
+
+  .section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--terra);
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4vw, 42px);
+    color: var(--navy);
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  .section-intro {
+    color: var(--slate);
+    font-size: 16px;
+    max-width: 580px;
+    margin-bottom: 52px;
+    line-height: 1.8;
+  }
+
+  /* ─── ABOUT ─── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .about-text p {
+    color: var(--slate);
+    margin-bottom: 20px;
+    font-size: 15.5px;
+    line-height: 1.85;
+  }
+
+  .about-text p:last-child { margin-bottom: 0; }
+
+  .about-aside {}
+
+  .aside-card {
+    background: var(--white);
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+
+  .aside-card-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--terra);
+    margin-bottom: 16px;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skill-tag {
+    background: var(--terra-pale);
+    color: #8a2050;
+    font-size: 12px;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-weight: 400;
+  }
+
+  .stack-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stack-list li {
+    font-size: 13.5px;
+    color: var(--slate);
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .stack-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 5px;
+    height: 1px;
+    background: var(--terra);
+  }
+
+  .personal-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .personal-item {
+    font-size: 12.5px;
+    color: var(--slate);
+    background: var(--cream);
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--cream-dark);
+  }
+
+  /* ─── WORK / TABS ─── */
+  #work { background: var(--cream); }
+
+  .work-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--cream-dark);
+    margin-bottom: 48px;
+    overflow-x: auto;
+  }
+
+  .work-tab {
+    padding: 12px 24px;
+    font-size: 13px;
+    color: var(--muted);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-family: var(--sans);
+    letter-spacing: 0.3px;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+
+  .work-tab:hover { color: var(--navy); }
+  .work-tab.active { color: var(--terra); border-bottom-color: var(--terra); font-weight: 500; }
+
+  .work-panel { display: none; }
+  .work-panel.active { display: block; }
+
+  /* Email Journey */
+  .journey-wrapper {
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--cream-dark);
+    overflow: hidden;
+  }
+
+  .journey-bar {
+    background: var(--navy);
+    padding: 22px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .journey-bar-title {
+    font-family: var(--serif);
+    color: var(--cream);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .journey-bar-meta {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: right;
+  }
+
+  .journey-body { padding: 36px 32px; }
+
+  .journey-intro {
+    font-size: 14px;
+    color: var(--slate);
+    margin-bottom: 32px;
+    max-width: 640px;
+    line-height: 1.7;
+  }
+
+  .journey-step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 0 20px;
+    margin-bottom: 8px;
+  }
+
+  .step-col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-bubble {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  .step-line {
+    width: 1px;
+    flex: 1;
+    min-height: 24px;
+    background: var(--cream-dark);
+  }
+
+  .step-content {
+    padding-bottom: 24px;
+  }
+
+  .step-meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--terra);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .step-card {
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+
+  .step-card:hover { border-color: var(--terra); }
+
+  .step-card-header {
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #faf8f5;
+  }
+
+  .step-card-name { font-size: 14px; font-weight: 500; color: var(--navy); }
+  .step-card-subject { font-size: 12.5px; color: var(--slate); margin-top: 3px; font-style: italic; }
+
+  .step-card-stats {
+    display: flex;
+    gap: 18px;
+    flex-shrink: 0;
+  }
+
+  .step-stat { text-align: right; }
+  .step-stat-num { font-size: 15px; font-weight: 500; color: var(--navy); }
+  .step-stat-label { font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .step-toggle {
+    font-size: 11px;
+    color: var(--terra);
+    letter-spacing: 0.5px;
+    margin-left: 16px;
+    white-space: nowrap;
+  }
+
+  .email-preview {
+    display: none;
+    border-top: 1px solid var(--cream-dark);
+  }
+
+  .email-preview.open { display: block; }
+
+  .email-chrome {
+    background: #f0ece4;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  .email-chrome-row {
+    font-size: 12px;
+    color: var(--slate);
+    margin-bottom: 3px;
+  }
+
+  .email-chrome-row span { color: var(--navy); }
+
+  .email-body {
+    padding: 28px 32px;
+    max-width: 600px;
+  }
+
+  .email-body h3 {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  .email-body p {
+    font-size: 14px;
+    color: #3a4a5e;
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+
+  .email-cta {
+    display: inline-block;
+    background: var(--terra);
+    color: var(--white);
+    padding: 11px 28px;
+    border-radius: 3px;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  /* SMS Panel */
+  .sms-intro {
+    font-size: 14px;
+    color: var(--slate);
+    margin-bottom: 36px;
+    max-width: 600px;
+    line-height: 1.7;
+  }
+
+  .sms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+
+  .sms-card {
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--cream-dark);
+    overflow: hidden;
+  }
+
+  .sms-card-header {
+    padding: 14px 20px;
+    background: #faf8f5;
+    border-bottom: 1px solid var(--cream-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sms-card-title { font-size: 13.5px; font-weight: 500; color: var(--navy); }
+
+  .sms-type-badge {
+    font-size: 10.5px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .badge-promo { background: #faeaef; color: #8a2050; }
+  .badge-lifecycle { background: #e8ecf4; color: #2a3a6a; }
+  .badge-alert { background: #e8f0ea; color: #1e5a30; }
+  .badge-win { background: #f0eafa; color: #5a3080; }
+
+  .sms-phone {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sms-bubble {
+    max-width: 82%;
+    padding: 10px 14px;
+    border-radius: 16px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .sms-bubble.brand {
+    background: var(--navy);
+    color: var(--cream);
+    border-bottom-left-radius: 4px;
+    align-self: flex-start;
+  }
+
+  .sms-bubble.reply {
+    background: var(--cream-dark);
+    color: var(--navy);
+    border-bottom-right-radius: 4px;
+    align-self: flex-end;
+  }
+
+  .sms-bubble.brand-2 {
+    background: var(--terra);
+    color: var(--white);
+    border-bottom-left-radius: 4px;
+    align-self: flex-start;
+  }
+
+  .sms-footer {
+    padding: 10px 20px 14px;
+    font-size: 11px;
+    color: var(--muted);
+    border-top: 1px solid var(--cream-dark);
+  }
+
+  /* SEO Blog Panel */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+  }
+
+  .blog-card {
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--cream-dark);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-card-band {
+    height: 6px;
+  }
+
+  .band-whirlpool { background: var(--navy); }
+  .band-kitchenaid { background: var(--terra); }
+  .band-maytag { background: #6a8a6a; }
+
+  .blog-card-body { padding: 24px; flex: 1; }
+
+  .blog-brand {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .blog-headline {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  .blog-excerpt {
+    font-size: 13.5px;
+    color: var(--slate);
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+
+  .blog-meta-row {
+    display: flex;
+    gap: 16px;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--cream-dark);
+  }
+
+  .blog-meta-item { text-align: left; }
+  .blog-meta-num { font-size: 15px; font-weight: 500; color: var(--navy); }
+  .blog-meta-label { font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .blog-keywords {
+    padding: 12px 24px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .keyword-tag {
+    font-size: 11px;
+    color: var(--slate);
+    background: var(--cream);
+    padding: 3px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--cream-dark);
+  }
+
+  /* Landing Page Panel */
+  .lp-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .lp-card {
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--cream-dark);
+    overflow: hidden;
+  }
+
+  .lp-card-header {
+    padding: 16px 22px;
+    background: var(--navy);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lp-card-title { font-size: 13px; color: var(--cream); font-weight: 400; }
+  .lp-card-type { font-size: 10.5px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+
+  .lp-content { padding: 24px; }
+
+  .lp-hero-text {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+
+  .lp-subtext {
+    font-size: 13.5px;
+    color: var(--slate);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .lp-bullets {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  .lp-bullets li {
+    font-size: 13px;
+    color: var(--slate);
+    padding: 6px 0;
+    padding-left: 18px;
+    position: relative;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  .lp-bullets li:last-child { border-bottom: none; }
+
+  .lp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--terra);
+  }
+
+  .lp-cta {
+    display: inline-block;
+    background: var(--terra);
+    color: var(--white);
+    padding: 10px 24px;
+    border-radius: 3px;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .lp-annotation {
+    margin-top: 16px;
+    padding: 12px 14px;
+    background: var(--terra-pale);
+    border-radius: 6px;
+    border-left: 3px solid var(--terra);
+  }
+
+  .lp-annotation-label {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--terra);
+    margin-bottom: 4px;
+  }
+
+  .lp-annotation-text { font-size: 12.5px; color: #7a3055; line-height: 1.6; }
+
+  /* ─── TIMELINE / EXPERIENCE ─── */
+  #experience { background: var(--cream-dark); }
+
+  .timeline { max-width: 760px; }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+    margin-bottom: 52px;
+    padding-bottom: 52px;
+    border-bottom: 1px solid rgba(90,106,130,0.12);
+  }
+
+  .timeline-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .timeline-left {}
+
+  .timeline-period {
+    font-size: 12px;
+    color: var(--terra);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .timeline-company {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+
+  .timeline-location {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .timeline-right {}
+
+  .timeline-role {
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--navy);
+    font-weight: 400;
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+
+  .timeline-desc {
+    font-size: 14px;
+    color: var(--slate);
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+
+  .timeline-highlight {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--terra-pale);
+    color: #7a4020;
+    font-size: 12.5px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+
+  /* ─── EDUCATION ─── */
+  #education { background: var(--cream); }
+
+  .edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 880px;
+  }
+
+  .edu-card {
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--cream-dark);
+    padding: 28px;
+  }
+
+  .edu-card-year {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--terra);
+    margin-bottom: 8px;
+  }
+
+  .edu-card-degree {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 6px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  .edu-card-school {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--slate);
+    margin-bottom: 16px;
+  }
+
+  .edu-card-details {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  .edu-card-badge {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--cream);
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-top: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  /* ─── CONTACT ─── */
+  #contact { background: var(--navy); }
+
+  #contact .section-label { color: var(--terra-light); }
+
+  #contact .section-title {
+    color: var(--cream);
+    max-width: 500px;
+  }
+
+  #contact .section-intro { color: var(--muted); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .contact-info { }
+
+  .contact-link-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .contact-icon svg { width: 16px; height: 16px; stroke: var(--muted); fill: none; }
+
+  .contact-link-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
+  .contact-link-value { font-size: 14.5px; color: var(--cream); }
+  .contact-link-row:hover .contact-link-value { color: var(--terra-light); }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+
+  .form-field label {
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+  }
+
+  .form-field input,
+  .form-field textarea {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 12px 16px;
+    color: var(--cream);
+    font-family: var(--sans);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    resize: vertical;
+  }
+
+  .form-field input:focus,
+  .form-field textarea:focus { border-color: var(--terra); }
+
+  .form-field input::placeholder,
+  .form-field textarea::placeholder { color: rgba(255,255,255,0.2); }
+
+  .form-submit {
+    background: var(--terra);
+    color: var(--white);
+    border: none;
+    padding: 14px 36px;
+    border-radius: 3px;
+    font-family: var(--sans);
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.2s;
+    font-weight: 500;
+  }
+
+  .form-submit:hover { background: var(--terra-light); }
+
+  .form-success {
+    display: none;
+    padding: 16px;
+    background: rgba(193,123,92,0.15);
+    border: 1px solid rgba(193,123,92,0.3);
+    border-radius: 6px;
+    color: var(--terra-light);
+    font-size: 14px;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: #111827;
+    padding: 28px 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .footer-name {
+    font-family: var(--serif);
+    color: var(--muted);
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .footer-note { font-size: 12px; color: rgba(255,255,255,0.2); }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-eyebrow { animation: fadeUp 0.5s ease both; }
+  .hero-name { animation: fadeUp 0.5s 0.1s ease both; }
+  .hero-tagline { animation: fadeUp 0.5s 0.2s ease both; }
+  .hero-actions { animation: fadeUp 0.5s 0.3s ease both; }
+  .hero-stats { animation: fadeUp 0.5s 0.4s ease both; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home" class="nav-name">Samantha Claire Storms</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-text-col">
+      <p class="hero-eyebrow">Digital Marketer &nbsp;·&nbsp; Pittsburgh, PA</p>
+      <h1 class="hero-name">Samantha<br><em>Claire Storms</em></h1>
+      <p class="hero-tagline">"The right words, delivered to the right people at the right time, can do more than just sell."</p>
+      <div class="hero-actions">
+        <a href="Samantha_Storms_Resume.pdf" download class="btn-primary">Download Résumé</a>
+        <a href="https://linkedin.com/in/samanthacstorms" target="_blank" class="btn-outline">LinkedIn Profile</a>
+        <a href="#work" class="btn-outline">View My Work</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">7+</div>
+          <div class="hero-stat-label">Years in marketing</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">46%</div>
+          <div class="hero-stat-label">Organic traffic growth</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">37%</div>
+          <div class="hero-stat-label">Lead engagement uplift</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">67%</div>
+          <div class="hero-stat-label">CTR boost, Black Friday '22</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo-col">
+      <div class="hero-photo-frame">
+        <img src="headshot.jpg" alt="Samantha Claire Storms" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="hero-photo-placeholder" style="display:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <span>Add your photo<br>as headshot.jpg</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">About me</p>
+  <h2 class="section-title">A writer who learned to love data.<br>A strategist who never stopped writing.</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>My career started in the pages of educational publishing — a world that taught me that words carry weight, that audience matters, and that clarity is a form of respect. That foundation has shaped everything I've done since.</p>
+      <p>Over seven years across agency and in-house roles, I've grown into a lifecycle marketer who specializes in email and SMS strategy — mapping customer journeys, building automated workflows, and writing the copy that holds it all together. Currently, I lead email and SMS strategy at the School for International Training, driving outreach to prospective students, parents, partners, and alumni for a nonprofit with truly global reach.</p>
+      <p>I completed my MBA in Marketing from Hofstra University in 2025, which included a remarkable detour: as a Bioscience Business Innovation Fellow, I collaborated with Cold Spring Harbor Laboratory scientists to develop a cancer treatment business concept. It was a reminder that great communication — clear, empathetic, purposeful — matters in every industry.</p>
+      <p>When I'm not mapping out email sequences, you'll find me hunting for the perfect planner, making playlists for anyone who will accept them, painting watercolors, and spending quality time with my cat, Lincoln. I believe a curated playlist is an act of love — and I bring that same intentionality to every campaign I build.</p>
+    </div>
+    <div class="about-aside">
+      <div class="aside-card">
+        <p class="aside-card-title">Core expertise</p>
+        <div class="skill-list">
+          <span class="skill-tag">Email Marketing</span>
+          <span class="skill-tag">SMS Marketing</span>
+          <span class="skill-tag">Lifecycle Strategy</span>
+          <span class="skill-tag">Copywriting</span>
+          <span class="skill-tag">SEO Content</span>
+          <span class="skill-tag">A/B Testing</span>
+          <span class="skill-tag">Segmentation</span>
+          <span class="skill-tag">Campaign Automation</span>
+          <span class="skill-tag">Brand Voice</span>
+        </div>
+      </div>
+      <div class="aside-card">
+        <p class="aside-card-title">Tech stack</p>
+        <ul class="stack-list">
+          <li>Salesforce Marketing Cloud</li>
+          <li>Customer.io</li>
+          <li>HubSpot CRM</li>
+          <li>Mailchimp</li>
+          <li>Semrush · Google Analytics</li>
+          <li>Adobe Experience Manager</li>
+          <li>WordPress · Drupal · Unbounce</li>
+          <li>Figma · Canva · Adobe InDesign</li>
+        </ul>
+      </div>
+      <div class="aside-card">
+        <p class="aside-card-title">Off the clock</p>
+        <div class="personal-row">
+          <span class="personal-item">Watercolor</span>
+          <span class="personal-item">Playlists</span>
+          <span class="personal-item">Podcasts</span>
+          <span class="personal-item">Documentaries</span>
+          <span class="personal-item">The Last of Us</span>
+          <span class="personal-item">Lincoln the cat</span>
+          <span class="personal-item">The perfect planner</span>
+          <span class="personal-item">Notes app</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <p class="section-label">Work samples</p>
+  <h2 class="section-title">Words in their natural habitat.</h2>
+  <p class="section-intro">From welcome sequences to win-back campaigns, SEO content to landing pages — here's a look at how I think, write, and strategize across channels.</p>
+
+  <div class="work-tabs">
+    <button class="work-tab active" onclick="switchTab('email')">Customer email journey</button>
+    <button class="work-tab" onclick="switchTab('sms')">SMS campaigns</button>
+    <button class="work-tab" onclick="switchTab('seo')">SEO blog content</button>
+    <button class="work-tab" onclick="switchTab('landing')">Landing page copy</button>
+  </div>
+
+  <!-- EMAIL JOURNEY -->
+  <div id="tab-email" class="work-panel active">
+    <div class="journey-wrapper">
+      <div class="journey-bar">
+        <div>
+          <div class="journey-bar-title">New Lead Nurture Sequence</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:4px;">Maronda Homes · Customer.io · 5-touch automated series</div>
+        </div>
+        <div class="journey-bar-meta">
+          Avg. open rate: <strong style="color:var(--cream);">44%</strong><br>
+          Appt. conversion: <strong style="color:var(--cream);">+21%</strong>
+        </div>
+      </div>
+      <div class="journey-body">
+        <p class="journey-intro">A five-email automated journey designed to move a cold lead from curiosity to scheduled appointment — without ever feeling like a hard sell. Each email is timed to behavioral triggers and segmented by community interest.</p>
+
+        <!-- Step 1 -->
+        <div class="journey-step">
+          <div class="step-col-left">
+            <div class="step-bubble" style="background:#e8ecf4;color:#1a2340;">1</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <p class="step-meta">Day 0 · Trigger: form submit</p>
+            <div class="step-card" onclick="togglePreview('p1')">
+              <div class="step-card-header">
+                <div>
+                  <div class="step-card-name">The Welcome</div>
+                  <div class="step-card-subject">"Your new home search starts here — and we're glad you're here."</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;">
+                  <div class="step-card-stats">
+                    <div class="step-stat"><div class="step-stat-num">58%</div><div class="step-stat-label">Open rate</div></div>
+                    <div class="step-stat"><div class="step-stat-num">12%</div><div class="step-stat-label">CTR</div></div>
+                  </div>
+                  <span class="step-toggle" id="toggle-p1">▾ Preview</span>
+                </div>
+              </div>
+              <div class="email-preview" id="p1">
+                <div class="email-chrome">
+                  <div class="email-chrome-row">From: <span>Maronda Homes &lt;hello@marondahomes.com&gt;</span></div>
+                  <div class="email-chrome-row">Subject: <span>Your new home search starts here — and we're glad you're here.</span></div>
+                </div>
+                <div class="email-body">
+                  <h3>Finding a home is personal. We treat it that way.</h3>
+                  <p>Hi [First Name],</p>
+                  <p>You just took the first step toward something exciting — and we want to make sure the rest of the journey feels just as good as that first click.</p>
+                  <p>At Maronda Homes, we build more than houses. We build the places where your life happens. And we know that the decision you're about to make is one of the most meaningful ones you'll ever face. That's why we're here: not to rush you, but to help you find the right fit.</p>
+                  <p>Over the next few weeks, we'll share a few things that'll make your search easier, smarter, and — we hope — a little more exciting. To start, here's a look at our communities near you.</p>
+                  <a href="#" class="email-cta">Explore communities near me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="journey-step">
+          <div class="step-col-left">
+            <div class="step-bubble" style="background:#faeee8;color:#8a4020;">2</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <p class="step-meta">Day 3 · Trigger: no appointment booked</p>
+            <div class="step-card" onclick="togglePreview('p2')">
+              <div class="step-card-header">
+                <div>
+                  <div class="step-card-name">The Education</div>
+                  <div class="step-card-subject">"New construction vs. resale: the guide we wish everyone had."</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;">
+                  <div class="step-card-stats">
+                    <div class="step-stat"><div class="step-stat-num">47%</div><div class="step-stat-label">Open rate</div></div>
+                    <div class="step-stat"><div class="step-stat-num">9%</div><div class="step-stat-label">CTR</div></div>
+                  </div>
+                  <span class="step-toggle" id="toggle-p2">▾ Preview</span>
+                </div>
+              </div>
+              <div class="email-preview" id="p2">
+                <div class="email-chrome">
+                  <div class="email-chrome-row">From: <span>Maronda Homes &lt;hello@marondahomes.com&gt;</span></div>
+                  <div class="email-chrome-row">Subject: <span>New construction vs. resale: the guide we wish everyone had.</span></div>
+                </div>
+                <div class="email-body">
+                  <h3>It's not just about the house. It's about the choice.</h3>
+                  <p>Hi [First Name],</p>
+                  <p>The home buying process is full of decisions — and the very first one often trips people up: new construction or resale?</p>
+                  <p>Both have their merits. But there are a few things about new construction that buyers tell us they wish they'd known sooner. Like the fact that you're not inheriting someone else's timeline, their taste in tile, or their HVAC issues.</p>
+                  <p>We put together a quick guide to help you think it through — no sales pitch, just the honest comparison buyers actually want.</p>
+                  <a href="#" class="email-cta">Read the guide</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="journey-step">
+          <div class="step-col-left">
+            <div class="step-bubble" style="background:#e8f0ea;color:#1e5a30;">3</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <p class="step-meta">Day 7 · Trigger: guide opened</p>
+            <div class="step-card" onclick="togglePreview('p3')">
+              <div class="step-card-header">
+                <div>
+                  <div class="step-card-name">The Social Proof</div>
+                  <div class="step-card-subject">"Real people. Real moves. Real communities."</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;">
+                  <div class="step-card-stats">
+                    <div class="step-stat"><div class="step-stat-num">41%</div><div class="step-stat-label">Open rate</div></div>
+                    <div class="step-stat"><div class="step-stat-num">14%</div><div class="step-stat-label">CTR</div></div>
+                  </div>
+                  <span class="step-toggle" id="toggle-p3">▾ Preview</span>
+                </div>
+              </div>
+              <div class="email-preview" id="p3">
+                <div class="email-chrome">
+                  <div class="email-chrome-row">From: <span>Maronda Homes &lt;hello@marondahomes.com&gt;</span></div>
+                  <div class="email-chrome-row">Subject: <span>Real people. Real moves. Real communities.</span></div>
+                </div>
+                <div class="email-body">
+                  <h3>You're not just buying a home. You're joining a community.</h3>
+                  <p>Hi [First Name],</p>
+                  <p>We could tell you how great our communities are. Or we could let the people who actually live there do the talking.</p>
+                  <p>"We were nervous about new construction — but Maronda walked us through every step. Now we're in our dream home in [Community Name] and we couldn't be happier." — The Nguyen Family, Homeowners since 2023</p>
+                  <p>Stories like this are why we do what we do. And we'd love to help write yours.</p>
+                  <a href="#" class="email-cta">Schedule a tour</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="journey-step">
+          <div class="step-col-left">
+            <div class="step-bubble" style="background:#f0eafa;color:#5a3080;">4</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <p class="step-meta">Day 14 · Trigger: no appointment booked</p>
+            <div class="step-card" onclick="togglePreview('p4')">
+              <div class="step-card-header">
+                <div>
+                  <div class="step-card-name">The Soft Urgency</div>
+                  <div class="step-card-subject">"A few things have changed in [Market] — worth a look."</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;">
+                  <div class="step-card-stats">
+                    <div class="step-stat"><div class="step-stat-num">38%</div><div class="step-stat-label">Open rate</div></div>
+                    <div class="step-stat"><div class="step-stat-num">11%</div><div class="step-stat-label">CTR</div></div>
+                  </div>
+                  <span class="step-toggle" id="toggle-p4">▾ Preview</span>
+                </div>
+              </div>
+              <div class="email-preview" id="p4">
+                <div class="email-chrome">
+                  <div class="email-chrome-row">From: <span>Maronda Homes &lt;hello@marondahomes.com&gt;</span></div>
+                  <div class="email-chrome-row">Subject: <span>A few things have changed in [Market] — worth a look.</span></div>
+                </div>
+                <div class="email-body">
+                  <h3>The market moves. We keep you in the loop.</h3>
+                  <p>Hi [First Name],</p>
+                  <p>Rates shifted last week. A few quick-move homes just opened up in communities on your radar. And one of our most popular floor plans just got a pricing update worth knowing about.</p>
+                  <p>We're not here to create pressure — we're here to make sure you have the information you need to make a confident decision on your timeline.</p>
+                  <p>If now feels like the right moment, we'd love to show you around. If not, we'll be here when it is.</p>
+                  <a href="#" class="email-cta">See what's new</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="journey-step">
+          <div class="step-col-left">
+            <div class="step-bubble" style="background:#1e0f2e;color:#f7f0f2;">5</div>
+          </div>
+          <div class="step-content">
+            <p class="step-meta">Day 21 · Final touch</p>
+            <div class="step-card" onclick="togglePreview('p5')">
+              <div class="step-card-header">
+                <div>
+                  <div class="step-card-name">The Graceful Exit</div>
+                  <div class="step-card-subject">"No pressure — but here's how to find us when you're ready."</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;">
+                  <div class="step-card-stats">
+                    <div class="step-stat"><div class="step-stat-num">35%</div><div class="step-stat-label">Open rate</div></div>
+                    <div class="step-stat"><div class="step-stat-num">8%</div><div class="step-stat-label">CTR</div></div>
+                  </div>
+                  <span class="step-toggle" id="toggle-p5">▾ Preview</span>
+                </div>
+              </div>
+              <div class="email-preview" id="p5">
+                <div class="email-chrome">
+                  <div class="email-chrome-row">From: <span>Maronda Homes &lt;hello@marondahomes.com&gt;</span></div>
+                  <div class="email-chrome-row">Subject: <span>No pressure — but here's how to find us when you're ready.</span></div>
+                </div>
+                <div class="email-body">
+                  <h3>Whenever you're ready, we'll be here.</h3>
+                  <p>Hi [First Name],</p>
+                  <p>We know that finding a home doesn't happen on anyone's schedule but your own. So this is our last check-in for a while — but not our last offer to help.</p>
+                  <p>If your search is on pause, we get it. Life happens. When the timing feels right again, our team, our communities, and our door are all wide open for you.</p>
+                  <p>In the meantime, bookmark our community finder — so when you're ready to take the next step, you know exactly where to start.</p>
+                  <a href="#" class="email-cta">Save our community finder</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- SMS PANEL -->
+  <div id="tab-sms" class="work-panel">
+    <p class="sms-intro">SMS marketing lives and dies by economy of language. Every character counts, every send must earn its place in someone's lock screen. Here's a look at campaigns across tone and use case — from promotional blasts to lifecycle triggers.</p>
+    <div class="sms-grid">
+
+      <div class="sms-card">
+        <div class="sms-card-header">
+          <div class="sms-card-title">Promotional flash sale</div>
+          <span class="sms-type-badge badge-promo">Promotional</span>
+        </div>
+        <div class="sms-phone">
+          <div class="sms-bubble brand">Maronda Homes: Big news for [Market] buyers. Quick-move homes just dropped to our lowest prices of the season — and they won't last. See what's available: [link] Reply STOP to opt out.</div>
+        </div>
+        <div class="sms-footer">Sent: 9:00 AM · Segment: Active leads, browsed in last 30 days · Open: ~95%</div>
+      </div>
+
+      <div class="sms-card">
+        <div class="sms-card-header">
+          <div class="sms-card-title">Appointment reminder</div>
+          <span class="sms-type-badge badge-lifecycle">Lifecycle</span>
+        </div>
+        <div class="sms-phone">
+          <div class="sms-bubble brand">Hi [First Name]! Just a reminder: your Maronda Homes tour is tomorrow at 2 PM at [Community Name]. We're looking forward to showing you around. Questions? Reply here or call [phone].</div>
+          <div class="sms-bubble reply">We're so excited! See you then 😊</div>
+          <div class="sms-bubble brand-2">We can't wait! See you tomorrow. 🏡</div>
+        </div>
+        <div class="sms-footer">Trigger: 24h before scheduled tour · Response rate: 31%</div>
+      </div>
+
+      <div class="sms-card">
+        <div class="sms-card-header">
+          <div class="sms-card-title">Re-engagement / win-back</div>
+          <span class="sms-type-badge badge-win">Win-back</span>
+        </div>
+        <div class="sms-phone">
+          <div class="sms-bubble brand">Hey [First Name] — it's been a minute. A lot has changed in [Market] since we last connected. New communities, new floor plans, new incentives worth knowing about. Want a quick update? [link]</div>
+          <div class="sms-bubble reply">Yes actually! What's new near [Zip]?</div>
+        </div>
+        <div class="sms-footer">Segment: No engagement in 60+ days · Uplift: +37% re-engagement</div>
+      </div>
+
+      <div class="sms-card">
+        <div class="sms-card-header">
+          <div class="sms-card-title">SIT program deadline alert</div>
+          <span class="sms-type-badge badge-alert">Transactional</span>
+        </div>
+        <div class="sms-phone">
+          <div class="sms-bubble brand">SIT Study Abroad: Heads up, [First Name] — the application deadline for Spring programs is 3 weeks away. Don't let your dream semester slip by. Apply now: [link] Questions? Reply here.</div>
+          <div class="sms-bubble reply">Thanks for the reminder! Just submitted mine.</div>
+          <div class="sms-bubble brand-2">That's wonderful news, [First Name]! Keep an eye on your inbox — we'll be in touch soon. 🌍</div>
+        </div>
+        <div class="sms-footer">School for International Training · Salesforce Marketing Cloud · Sent to: prospective students</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SEO BLOG PANEL -->
+  <div id="tab-seo" class="work-panel">
+    <p class="sms-intro">My SEO content work at Aisle Rocket helped drive a 46% year-over-year increase in organic traffic across the Whirlpool family of brands. The secret? Writing for humans first — search engines second. Here are three sample pieces from that body of work.</p>
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <div class="blog-card-band band-whirlpool"></div>
+        <div class="blog-card-body">
+          <div class="blog-brand">Whirlpool · Semrush · AEM</div>
+          <h3 class="blog-headline">How Long Should a Washing Machine Last? (And How to Make It Last Longer)</h3>
+          <p class="blog-excerpt">A practical guide to washing machine lifespan, warning signs to watch for, and the maintenance habits that keep your appliance running well past the average. Written to capture high-intent informational queries from homeowners in the mid-funnel research phase.</p>
+          <div class="blog-meta-row">
+            <div class="blog-meta-item"><div class="blog-meta-num">6.2K</div><div class="blog-meta-label">Monthly visits</div></div>
+            <div class="blog-meta-item"><div class="blog-meta-num">#3</div><div class="blog-meta-label">SERP position</div></div>
+            <div class="blog-meta-item"><div class="blog-meta-num">4:12</div><div class="blog-meta-label">Avg. time on page</div></div>
+          </div>
+        </div>
+        <div class="blog-keywords">
+          <span class="keyword-tag">washing machine lifespan</span>
+          <span class="keyword-tag">appliance maintenance</span>
+          <span class="keyword-tag">when to replace washer</span>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-card-band band-kitchenaid"></div>
+        <div class="blog-card-body">
+          <div class="blog-brand">KitchenAid · Google Search Console · AEM</div>
+          <h3 class="blog-headline">Stand Mixer vs. Hand Mixer: Which One Actually Belongs in Your Kitchen?</h3>
+          <p class="blog-excerpt">An honest, conversion-friendly comparison piece designed to meet readers where they are in the decision process — and gently guide them toward the KitchenAid stand mixer without a single sentence that reads like an ad.</p>
+          <div class="blog-meta-row">
+            <div class="blog-meta-item"><div class="blog-meta-num">9.8K</div><div class="blog-meta-label">Monthly visits</div></div>
+            <div class="blog-meta-item"><div class="blog-meta-num">#2</div><div class="blog-meta-label">SERP position</div></div>
+            <div class="blog-meta-item"><div class="blog-meta-num">5:38</div><div class="blog-meta-label">Avg. time on page</div></div>
+          </div>
+        </div>
+        <div class="blog-keywords">
+          <span class="keyword-tag">stand mixer vs hand mixer</span>
+          <span class="keyword-tag">best stand mixer</span>
+          <span class="keyword-tag">KitchenAid buying guide</span>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-card-band band-maytag"></div>
+        <div class="blog-card-body">
+          <div class="blog-brand">Maytag · Semrush · AEM</div>
+          <h3 class="blog-headline">Why Your Dryer Takes Forever — and What You Can Actually Do About It</h3>
+          <p class="blog-excerpt">A troubleshooting-led article built around a cluster of high-volume "dryer not drying" queries. Structured with clear H2s for featured snippet eligibility, with a natural escalation from DIY fixes to product recommendations.</p>
+          <div class="blog-meta-row">
+            <div class="blog-meta-item"><div class="blog-meta-num">11.4K</div><div class="blog-meta-label">Monthly visits</div></div>
+            <div class="blog-meta-item"><div class="blog-meta-num">#1</div><div class="blog-meta-label">SERP position</div></div>
+            <div class="blog-meta-item"><div class="blog-meta-num">3:55</div><div class="blog-meta-label">Avg. time on page</div></div>
+          </div>
+        </div>
+        <div class="blog-keywords">
+          <span class="keyword-tag">dryer not drying clothes</span>
+          <span class="keyword-tag">dryer troubleshooting</span>
+          <span class="keyword-tag">slow dryer fix</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LANDING PAGE PANEL -->
+  <div id="tab-landing" class="work-panel">
+    <p class="sms-intro">Landing page copy lives at the intersection of strategy and craft. Every word is doing a job. Here are two annotated examples showing how I approach different audiences, goals, and tones — with notes on the strategic thinking behind each choice.</p>
+    <div class="lp-showcase">
+
+      <div class="lp-card">
+        <div class="lp-card-header">
+          <div class="lp-card-title">Maronda Homes — Quick-Move Home Campaign</div>
+          <div class="lp-card-type">Conversion · High intent</div>
+        </div>
+        <div class="lp-content">
+          <h3 class="lp-hero-text">Your next home is ready. Are you?</h3>
+          <p class="lp-subtext">No waiting. No construction timelines. Just move-in ready homes in the communities you've been watching — at prices that make sense right now.</p>
+          <ul class="lp-bullets">
+            <li>Professionally designed interiors, included</li>
+            <li>Financing options tailored to your situation</li>
+            <li>Close in as little as 30 days</li>
+            <li>Backed by the Maronda build quality guarantee</li>
+          </ul>
+          <a href="#" class="lp-cta">Find my quick-move home</a>
+          <div class="lp-annotation">
+            <div class="lp-annotation-label">Strategic note</div>
+            <div class="lp-annotation-text">The headline leans into readiness, not urgency — a subtle but important distinction for buyers who are already warm. The CTA is possessive ("my") to signal personalization and ownership before the click.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lp-card">
+        <div class="lp-card-header">
+          <div class="lp-card-title">SIT Study Abroad — Graduate Programs</div>
+          <div class="lp-card-type">Lead gen · Values-driven audience</div>
+        </div>
+        <div class="lp-content">
+          <h3 class="lp-hero-text">Study the world. Graduate ready to change it.</h3>
+          <p class="lp-subtext">SIT's graduate programs aren't just degrees — they're launching pads for careers in global education, sustainability, social justice, and international development.</p>
+          <ul class="lp-bullets">
+            <li>Fully accredited graduate degrees</li>
+            <li>Programs on all seven continents</li>
+            <li>Built around experiential, justice-centered learning</li>
+            <li>Alumni working across 100+ countries</li>
+          </ul>
+          <a href="#" class="lp-cta">Explore graduate programs</a>
+          <div class="lp-annotation">
+            <div class="lp-annotation-label">Strategic note</div>
+            <div class="lp-annotation-text">SIT's audience skews idealistic and mission-driven — so the copy leads with impact, not credentials. "Launching pad" replaces generic "opportunity" language. Every bullet answers the unspoken question: will this matter?</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <p class="section-label">Experience</p>
+  <h2 class="section-title">The career arc.</h2>
+  <p class="section-intro">Seven years of learning, writing, testing, and growing — across nonprofits, agencies, homebuilders, and publishing houses.</p>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <div class="timeline-period">2024 – Present</div>
+        <div class="timeline-company">School for International Training</div>
+        <div class="timeline-location">Remote · Washington, D.C. Team</div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-role">Email Marketing Specialist</div>
+        <p class="timeline-desc">Lead email and SMS strategy for a globally focused nonprofit spanning study abroad and graduate education. Drive prospective student outreach, partner communications, and alumni engagement using Salesforce Marketing Cloud — across all seven continents of program delivery.</p>
+        <span class="timeline-highlight">Salesforce Marketing Cloud</span>
+        <span class="timeline-highlight">A/B Testing</span>
+        <span class="timeline-highlight">Lifecycle Automation</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <div class="timeline-period">2024 – Present</div>
+        <div class="timeline-company">Maronda Homes</div>
+        <div class="timeline-location">Pittsburgh, PA · Freelance</div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-role">Email Marketing Coordinator</div>
+        <p class="timeline-desc">Manage end-to-end email and SMS campaigns for a regional homebuilder using Customer.io. Applied behavioral triggers and dynamic segmentation to drive measurable results in a competitive real estate market.</p>
+        <span class="timeline-highlight">37% lead engagement uplift</span>
+        <span class="timeline-highlight">+21% scheduled appointments</span>
+        <span class="timeline-highlight">Customer.io</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <div class="timeline-period">2022 – 2023</div>
+        <div class="timeline-company">Aisle Rocket</div>
+        <div class="timeline-location">Remote · Chicago Team</div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-role">Senior Copywriter</div>
+        <p class="timeline-desc">Crafted and optimized SEO-driven content for the Whirlpool family of brands — Whirlpool, KitchenAid, and Maytag — using Semrush, Google Search Console, and Adobe Experience Manager. Also developed promotional and ad copy for seasonal campaigns.</p>
+        <span class="timeline-highlight">46% YoY organic traffic growth</span>
+        <span class="timeline-highlight">67% CTR boost, Black Friday '22</span>
+        <span class="timeline-highlight">Semrush · AEM</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <div class="timeline-period">2017 – 2022</div>
+        <div class="timeline-company">ONE18MEDIA</div>
+        <div class="timeline-location">Melville, NY</div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-role">Creative Copywriter & Editor → Digital Content Coordinator</div>
+        <p class="timeline-desc">Grew from Digital Content Coordinator to Creative Copywriter and Editor over five years, managing digital content strategy across 20+ client brands. Built expertise in brand voice, audience segmentation, and cross-channel content performance.</p>
+        <span class="timeline-highlight">30% avg. engagement increase</span>
+        <span class="timeline-highlight">27% website traffic boost</span>
+        <span class="timeline-highlight">20+ client brands</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <p class="section-label">Education</p>
+  <h2 class="section-title">The foundation.</h2>
+  <p class="section-intro">From honors English to a Bioscience Business Innovation Fellowship — built on a love of language and a curiosity that doesn't stay in one lane.</p>
+
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-card-year">May 2025</div>
+      <div class="edu-card-degree">Master of Business Administration, Marketing</div>
+      <div class="edu-card-school">Hofstra University — Zarb School of Business</div>
+      <div class="edu-card-details">
+        Bioscience Business Innovation Fellow in collaboration with Cold Spring Harbor Laboratory. Capstone project: developed a cancer treatment business concept alongside two CSHL scientists as part of the inaugural fellowship cohort.
+      </div>
+      <span class="edu-card-badge">Bioscience Innovation Fellow</span>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-year">May 2019</div>
+      <div class="edu-card-degree">BA, English (Literature & Publishing Studies) & Journalism</div>
+      <div class="edu-card-school">Hofstra University — Honors College</div>
+      <div class="edu-card-details">
+        Summa cum laude, Phi Beta Kappa. Journalism Senior of the Year, 2018. Member of Phi Eta Sigma, Lambda Pi Eta, and Sigma Tau Delta honor societies. The publishing studies track is where the love of language met the craft of communication — and where this career quietly began.
+      </div>
+      <span class="edu-card-badge">Summa cum laude · Phi Beta Kappa</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Get in touch</p>
+  <h2 class="section-title">Let's find the right words together.</h2>
+  <p class="section-intro" style="margin-bottom:48px;">Whether you're building a lifecycle program from scratch, looking to sharpen your email strategy, or just want to talk shop — I'd love to connect.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <a href="mailto:scstorms96@gmail.com" class="contact-link-row">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        </div>
+        <div>
+          <div class="contact-link-label">Email</div>
+          <div class="contact-link-value">scstorms96@gmail.com</div>
+        </div>
+      </a>
+      <a href="tel:9179745196" class="contact-link-row">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 11.91 19.79 19.79 0 0 1 1 3.18 2 2 0 0 1 3 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-link-label">Phone</div>
+          <div class="contact-link-value">(917) 974-5196</div>
+        </div>
+      </a>
+      <a href="https://linkedin.com/in/samanthacstorms" target="_blank" class="contact-link-row">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div>
+          <div class="contact-link-label">LinkedIn</div>
+          <div class="contact-link-value">in/samanthacstorms</div>
+        </div>
+      </a>
+      <a href="Samantha_Storms_Resume.pdf" download class="contact-link-row">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </div>
+        <div>
+          <div class="contact-link-label">Résumé</div>
+          <div class="contact-link-value">Download PDF</div>
+        </div>
+      </a>
+    </div>
+
+    <div>
+      <div class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label>Your name</label>
+            <input type="text" id="fname" placeholder="First Last">
+          </div>
+          <div class="form-field">
+            <label>Your email</label>
+            <input type="email" id="femail" placeholder="you@company.com">
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Subject</label>
+          <input type="text" id="fsubject" placeholder="What's on your mind?">
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea id="fmessage" rows="5" placeholder="Tell me about your project, opportunity, or just say hello."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">Send message</button>
+        <div class="form-success" id="formSuccess">Thank you! Your message has been sent. I'll be in touch soon.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-name">Samantha Claire Storms</div>
+  <div class="footer-note">Pittsburgh, PA · scstorms96@gmail.com</div>
+</footer>
+
+<script>
+  function switchTab(name) {
+    document.querySelectorAll('.work-tab').forEach((t, i) => {
+      const tabs = ['email','sms','seo','landing'];
+      t.classList.toggle('active', tabs[i] === name);
+    });
+    document.querySelectorAll('.work-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+  }
+
+  function togglePreview(id) {
+    const preview = document.getElementById(id);
+    const toggle = document.getElementById('toggle-' + id);
+    const isOpen = preview.classList.contains('open');
+    preview.classList.toggle('open', !isOpen);
+    if (toggle) toggle.textContent = isOpen ? '▾ Preview' : '▴ Close';
+  }
+
+  function submitForm() {
+    const name = document.getElementById('fname').value.trim();
+    const email = document.getElementById('femail').value.trim();
+    if (!name || !email) { alert('Please enter your name and email.'); return; }
+    document.getElementById('contactForm').style.opacity = '0.4';
+    document.getElementById('contactForm').style.pointerEvents = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+</script>
+</body>
+</html>
